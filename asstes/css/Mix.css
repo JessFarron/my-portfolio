@@ -1,0 +1,270 @@
+body {
+    background-color: #eeeef7;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+    line-height: 1.5;
+    }
+
+header { /*All regarding Developers name and nav bar*/
+    padding: 15px 0px; 
+    display: flex;
+    justify-content: space-between;  /*space between elemte h1 and nav*/
+    flex-wrap: wrap;
+    align-items: center;
+    background-color:#31343d;}
+    
+h1{ /* Style of my Name and it´s background*/
+    color: #31343d;
+    background-color: #92ccce;
+    padding: 0px 10px 0px 70px;
+    font-size: 3.9rem;
+    margin: 0px;}
+nav {padding-right: 10px;}
+
+header a {     /*Style to "links" in nav bar that lead to same specific sections of the page. STILL MISSING DOWN TO UP EFFECT*/
+    color: #92ccce;
+    font-size: 1.4rem;
+    text-decoration: none;
+    margin:0px 10px;  /*Gives space between a elements in nav bar, " justify-content: space-between;" didn´t work*/
+    transition: 1s; 
+    border-bottom: 2px solid #92ccce; /*Border is used to give an underline effect, has to complement with the down to up hover effect*/
+    }
+
+ header a:hover { /*STILL MISSING DOWN TO UP EFFECT*/
+    color: #31343d;
+    background-color:  #92ccce;
+    }
+/* STARTING COOL SUBTITLE SECTION*/
+.portada { /*ImageBackground and styles*/
+    display: flex;
+    background-blend-mode: soft-light;
+    background:#445877;
+    background-image:url("../images/02-hero-bg.jpg");
+    min-height: 15rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: end;
+    }
+
+h4 { /*Topic "Cool subtitle on class="portada"*/
+    margin-right: 40px;
+    margin-top: 150px;
+    color: #31343d;
+    font-size: 2rem;
+    padding: 5px 10px;
+    background-color: #92ccce;
+    }
+
+h2 {min-width:13% ;  /*Titles of the sections (about me , work and contact me) */
+    font-size: 3.5rem;
+    color:#445877;
+    margin: 10px 20px;
+    text-align: right; 
+    
+}
+
+.Pabout {  /*Text of about me*/
+    padding-left: 2rem;
+    font-size: 1rem;
+    color: #445877;
+    line-height: 30px;
+    border-left: solid #445877 .3rem;
+    }
+    
+.content { 
+        display: flex;
+    align-items: center;
+    }
+
+
+
+/*Regarding WORK section*/
+.Work {display: flex;
+    flex-wrap: wrap;
+   }
+
+.wlinks{ /*style of the section that contains anchors all as one element*/
+   
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    border-left: #445877 solid .3rem;
+    justify-content: center;
+    padding-left: 40px;
+    
+}
+.wlinks>a{  /*Styles of the text inside each anchor .Couldn´t make it work correctly background and positions*/
+    color: #445877;
+    display: block;
+    text-decoration: none;
+    border: #92ccce solid .3rem;
+    font-size: 1.8rem;
+    margin: 10px 8px;
+    padding-left: 10px;
+}
+
+
+a>div { /*anchor´s "subtitles"*/
+    font-size: 1rem;
+}
+
+
+/*Background images of each a element*/
+.Movie {background-image:url("../images/movieSearchHomePage.png"); 
+    background-position: end;
+    min-width: 100%;
+    height: 20rem;  
+    opacity:   .7;
+}
+
+.Led {background-image:url("../images/02-portfolio-1.jpg");
+    background-position: center;
+    background-size: cover;
+    min-width: 44%;
+    opacity:   .7;
+    height: 10rem;
+    }
+.Cal {background-image:url("../images/02-portfolio-2.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 44%;
+    height: 10rem;
+    opacity:   .7;
+    }
+.Pas {background-image:url("../images/02-portfolio-3.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 44%;
+    height: 10rem;
+    opacity:   .7;
+    }
+    .Run {background-image:url("../images/02-run-buddy.jpg");
+        background-position: center;
+    background-size: cover;
+    width: 44%;
+    height: 10rem; 
+    opacity:   .7;
+    
+    }
+
+    .Movie:hover , .Run:hover,.Led:hover,.Cal:hover,.Pas:hover  {
+        opacity:   1;
+      }
+
+/*All regarding section Contact*/
+.Contact {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.Info>a { text-decoration: none;
+    font-size: 1.3rem;
+    margin: 0px 9px;
+    border-bottom: solid #445877 .15rem;
+
+}
+.Info>a:hover {
+    color:#92ccce;
+    background-color: #445877 ;
+}
+.Info {
+    border-left: solid #445877 .3rem;
+    padding: 2.5rem 0px 2.5rem 2rem;
+} 
+
+
+
+    
+/*Display responsability 980px*/ 
+@media screen and (max-width: 980px) {
+    header { 
+      
+        background-color: none;
+        display:inline;
+        justify-content:space-between;
+        text-align: center;
+    }
+    h1 {
+        font-size: 5rem;
+        margin-bottom: 20px ;
+    }
+    .portada {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    h2 {
+        display: flex;
+        padding-left: 20px;
+        font-size: 4.5rem;
+        margin: 0px;
+       
+    }
+    h2>div{padding-left: 20px;}
+
+    .Pabout {
+        border: none;
+        border-top: solid #445877 .3rem;
+        margin: 0px 50px;
+        padding: 20px 0px;
+    }
+    .content {display: block;
+        flex-direction: column;
+        align-items: baseline ;
+        justify-content: space-between;
+    }
+
+    .wlinks{
+        border:none;
+        border-top: #445877 solid .3rem;
+        margin: 5px 40px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .Contact{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        margin: 0px 50px;
+    }
+    .Info {
+        display: flex;
+        padding-top: 30px;
+        border: none;
+        border-top: solid #445877 .3rem;
+    }  
+
+    }
+  /*Display responsability 980px*/   
+    @media screen and (max-width: 768px) {
+        h2 {font-size: 3rem;}
+    
+        .Info{ 
+            display:flex;
+            flex-direction: column;
+            border-top: #445877 solid .3rem;
+            padding-right: 40vw;}
+    
+        .Info>a {
+            display:none;
+            border: none;
+            display:flex;
+            }
+
+            .Surf  , .Led , .Cal, .Pas, .Run {
+            min-width: 90%;
+            height: 10rem; 
+
+        } 
+            
+
+    
+    }
