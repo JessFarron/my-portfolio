@@ -118,7 +118,7 @@ a>div { /*anchor´s "subtitles"*/
     opacity:   .7;
 }
 
-.Led {background-image:url("../images/02-portfolio-1.jpg");
+.Track {background-image:url("../images/TrackYourGoal.png");
     background-position: center;
     background-size: cover;
     min-width: 44%;
